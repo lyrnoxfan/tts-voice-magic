@@ -843,7 +843,7 @@ async function getEndpoint() {
                 "X-MT-Signature": await sign(endpointUrl),
                 "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0",
                 "Content-Type": "application/json; charset=utf-8",
-                "Content-Length": "0",
+                //"Content-Length": "0",
                 "Accept-Encoding": "gzip"
             }
         });
@@ -931,4 +931,5 @@ function dateFormat() {
     const formattedDate = (new Date()).toUTCString().replace(/GMT/, "").trim() + " GMT";
     return formattedDate.toLowerCase();
 }
+
 
